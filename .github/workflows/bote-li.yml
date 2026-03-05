@@ -1,0 +1,16 @@
+name: 伯特利日报
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 7 * * 1-5'
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install --upgrade pip && pip install requests akshare google-generativeai
+      - run: python bote_li_report.py
