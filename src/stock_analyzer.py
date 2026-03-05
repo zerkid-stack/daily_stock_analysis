@@ -55,7 +55,11 @@ def get_stock_data():
         except Exception as e:
             print(f"获取数据失败，重试：{e}")
             time.sleep(1)
-    return {"price": "暂无", "change": "暂无", "volume": "暂无", "main_flow": "暂无", "north_flow": "暂无", "pe_ttm": "暂无", "pb": "暂无", "date": today}
+    return {
+    "price": "暂无", "change": "暂无", "volume": "暂无",
+    "main_flow": "暂无", "north_flow": "暂无",
+    "pe_ttm": "暂无", "pb": "暂无", "date": today
+}
 
 def ai_analysis(data):
     """AI总结伯特利数据"""
