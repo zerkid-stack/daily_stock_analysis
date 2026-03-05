@@ -6,7 +6,7 @@ import time
 
 # ===================== 仅需修改这2处 =====================
 # 1. 你的企业微信机器人Webhook地址
-WECOM_WEBHOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c85c0623-0c72-4728-aba8-7ad3b915a791"
+WECOM_WEBHOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=518b8e62-4905-42ce-8fdb-67defa204693"
 # 2. 你的Gemini API Key
 GEMINI_API_KEY = "AIzaSyBcOy9657OGhurUifdS45fzcDPv9-TcSpg"
 # ========================================================
