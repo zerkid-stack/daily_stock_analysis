@@ -23,8 +23,8 @@ jobs:
 
       - name: 运行伯特利日报脚本
         env:
-          WECOM_WEBHOOK: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=518b8e62-4905-42ce-8fdb-67defa204693"
-          GEMINI_API_KEY: "AIzaSyBcOy9657OGhurUifdS45fzcDPv9-TcSpg"
+          WECOM_WEBHOOK: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=575d3e28-525c-42af-aec0-19a1754c56ef"
+          GEMINI_API_KEY: "AIzaSyCrY0F19ay40FhvpBTmAcqzbj81E-jhKAI"
         run: |
           python - <<EOF
 import requests
