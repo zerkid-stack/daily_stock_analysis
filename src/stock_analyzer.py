@@ -72,7 +72,8 @@ def ai_analysis(data):
     要求：专业、简洁，适合股票决策参考。
     """
     try:
-        response = model.generate_content(prompt)
+        # 加超时和重试，防止网络问题
+        response = model.generate_content(prompt, request_options={"timeout": 30})
         return response.text
     except Exception as e:
         return f"AI分析暂不可用：{str(e)[:50]}"
