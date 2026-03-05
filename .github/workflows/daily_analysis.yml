@@ -50,7 +50,7 @@ jobs:
       - name: 安装依赖
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests akshare google-generativeai python-dotenv
       
       - name: 创建必要目录
         run: |
